@@ -50,7 +50,7 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+#BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := onyx,OnePlus,E1003,ONE
@@ -165,10 +165,10 @@ BOARD_GLOBAL_CFLAGS+= -DUSE_RIL_VERSION_11
 TARGET_NO_RPC := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(PLATFORM_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+    #$(PLATFORM_PATH)/sepolicy
 
 # Sensors Compat
 BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
@@ -189,10 +189,10 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # QCNE
-BOARD_USES_QCNE := true
+#BOARD_USES_QCNE := true
 
-ifeq ($(BOARD_USES_QCNE),true)
-TARGET_LDPRELOAD := libNimsWrap.so
-endif
+#ifeq ($(BOARD_USES_QCNE),true)
+#TARGET_LDPRELOAD := libNimsWrap.so
+#endif
 
 -include vendor/oneplus/onyx/BoardConfigVendor.mk
