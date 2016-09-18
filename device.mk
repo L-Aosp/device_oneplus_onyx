@@ -94,7 +94,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
-    libstlport
+    libboringssl-compat \
+    libstlport \
+    libshim_camera \
 
 # Data
 PRODUCT_PACKAGES += \
@@ -187,7 +189,8 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
-    libxml2
+    libxml2 \
+    libprotobuf-cpp-full 
 
 # Sensors
 PRODUCT_COPY_FILES += \
