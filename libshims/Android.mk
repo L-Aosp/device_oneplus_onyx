@@ -23,7 +23,8 @@ LOCAL_SRC_FILES := \
     gui/SensorManager.cpp \
     ui/GraphicBuffer.cpp \
     ui/GraphicBufferAllocator.cpp \
-    ui/GraphicBufferMapper.cpp
+    ui/GraphicBufferMapper.cpp \
+    gps.c
 
 LOCAL_SHARED_LIBRARIES := \
     libbinder libcutils libgui libhardware liblog libsync libui libutils
