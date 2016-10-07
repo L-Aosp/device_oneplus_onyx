@@ -72,6 +72,8 @@ QCOM_BT_USE_SMD_TTY := true
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 TARGET_LDPRELOAD := libshim_camera.so
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+media.stagefright.legacyencoder=true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
