@@ -49,7 +49,7 @@ TARGET_KERNEL_CONFIG := cm_onyx_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+#BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := onyx,OnePlus,E1003,ONE
@@ -161,8 +161,8 @@ TARGET_NO_RPC := true
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
-BOARD_SEPOLICY_DIRS += \
-    $(PLATFORM_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+    #$(PLATFORM_PATH)/sepolicy
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
